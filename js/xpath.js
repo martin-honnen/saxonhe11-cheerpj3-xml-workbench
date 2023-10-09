@@ -12,7 +12,7 @@ async function xpath(input, xpathCode, inputType, resultsSelect) {
 	  var xpathResult = await xpathProcessor.evaluate(xpathCode, contextItem);
 	  
 	  
-	  var stringResult = await CheerpJ3Helper.javaToString(xpathResult);
+	  var stringResult = await xpathResult.toString(); // await CheerpJ3Helper.javaToString(xpathResult);
 	  
 	  setDocument(resultEditor, stringResult, 'xml');
 
