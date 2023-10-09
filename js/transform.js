@@ -34,7 +34,7 @@ async function transform(input, xslt, inputType, resultsSelect) {
 			  await xslt30Transformer.applyTemplates(contextItem, destination);
 		  }
 		  
-		  var stringResult = await CheerpJ3Helper.javaToString(stringWriter);  //await stringWriter.toString();
+		  var stringResult = await stringWriter.toString(); // await CheerpJ3Helper.javaToString(stringWriter); 
 
 		  setDocument(resultEditor, stringResult, 'xml');
 
