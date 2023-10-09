@@ -25,7 +25,7 @@ async function xquery(input, xquery, inputType, resultsSelect) {
 			
 		  await xquerySelector.run(destination);
 
-		  var stringResult = await CheerpJ3Helper.javaToString(stringWriter); //await stringWriter.toString();
+		  var stringResult = await stringWriter.toString(); // await CheerpJ3Helper.javaToString(stringWriter) 
 
 		  setDocument(resultEditor, stringResult, 'xml');
 
