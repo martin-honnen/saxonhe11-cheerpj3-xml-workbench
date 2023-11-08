@@ -33,6 +33,7 @@ async function xquery(input, xquery, inputType, resultsSelect) {
 	  }
 	  catch (e) {
 		  console.log(e);
+		  await e.printStackTrace();
       }
   }
   else {
